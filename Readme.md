@@ -13,6 +13,6 @@ This example demonstrates how hide the grand total column when there are no Data
 API in this example:
 
 * [PivotGridControl.CustomDrawFieldValue](https://docs.devexpress.com/WindowsForms/DevExpress.XtraPivotGrid.PivotGridControl.CustomDrawFieldValue) event
-* [PivotGridControl1.Appearance.Lines](https://docs.devexpress.com/WindowsForms/DevExpress.XtraPivotGrid.PivotGridAppearancesBase.Lines) property
+* [PivotGridControl.Appearance.Lines](https://docs.devexpress.com/WindowsForms/DevExpress.XtraPivotGrid.PivotGridAppearancesBase.Lines) property
 * [PivotGridLocalizer](https://docs.devexpress.com/CoreLibraries/DevExpress.XtraPivotGrid.Localization.PivotGridLocalizer) class
 
