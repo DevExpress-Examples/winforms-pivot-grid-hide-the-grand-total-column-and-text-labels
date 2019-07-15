@@ -1,4 +1,4 @@
-namespace WindowsApplication34
+namespace RemoveGridLinesExample
 {
     partial class Form1
     {
@@ -37,17 +37,17 @@ namespace WindowsApplication34
             this.pivotGridControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pivotGridControl1.Location = new System.Drawing.Point(0, 0);
             this.pivotGridControl1.Name = "pivotGridControl1";
-            this.pivotGridControl1.Size = new System.Drawing.Size(602, 313);
+            this.pivotGridControl1.Size = new System.Drawing.Size(610, 313);
             this.pivotGridControl1.TabIndex = 0;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(602, 313);
+            this.ClientSize = new System.Drawing.Size(610, 313);
             this.Controls.Add(this.pivotGridControl1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Remove Unnecessary Grid Lines and Text";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pivotGridControl1)).EndInit();
             this.ResumeLayout(false);

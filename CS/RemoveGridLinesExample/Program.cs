@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
 
-namespace WindowsApplication34
+namespace RemoveGridLinesExample
 {
     static class Program
     {

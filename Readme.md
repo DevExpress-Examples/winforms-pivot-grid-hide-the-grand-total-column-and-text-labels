@@ -1,14 +1,18 @@
 <!-- default file list -->
 *Files to look at*:
 
-* [Form1.cs](./CS/WindowsApplication34/Form1.cs) (VB: [Form1.vb](./VB/WindowsApplication34/Form1.vb))
-* [Program.cs](./CS/WindowsApplication34/Program.cs) (VB: [Program.vb](./VB/WindowsApplication34/Program.vb))
+* [Form1.cs](./CS/RemoveGridLinesExample/Form1.cs) (VB: [Form1.vb](./VB/RemoveGridLinesExample/Form1.vb))
 <!-- default file list end -->
-# How to hide the Grand Total column and Data Area if there is no Data and Column Fields
+# How to Hide Unnecessary Grid Lines and Text
 
 
-<p>This example demonstrates how hide the grand total column when the XtraPivotGrid control does not contains any Data or Column fields. To achieve the required result, it is necessary to use the <a href="http://documentation.devexpress.com/#WindowsForms/DevExpressXtraPivotGridPivotGridControl_CustomDrawFieldValuetopic">PivotGridControl.CustomDrawFieldValue</a> event to hide Column Field Values. In additional, it is necessary to set the <a href="http://documentation.devexpress.com/#WindowsForms/DevExpressXtraPivotGridPivotGridAppearancesBase_Linestopic">PivotGridAppearancesBase.Lines</a> color to <i>Color.Transparent</i>. The <a href="http://documentation.devexpress.com/#CoreLibraries/DevExpressXtraPivotGridLocalizationPivotGridLocalizerMembersTopicAll">PivotGridLocalizer </a> object is used to  hide "Drop Column Fields Here" and "Drop Data Fields Here"  inscriptions.</p>
+This example demonstrates how hide the grand total column when there are no Data or Column fields, clear grid lines and remove the "Drop Data Items Here", "Drop Column Fields Here", "Drop Filter Fields Here" labels.
 
-<br/>
+![screenshot](/images/screenshot.png)
 
+API in this example:
+
+* [PivotGridControl.CustomDrawFieldValue](https://docs.devexpress.com/WindowsForms/DevExpress.XtraPivotGrid.PivotGridControl.CustomDrawFieldValue) event
+* [PivotGridControl1.Appearance.Lines](https://docs.devexpress.com/WindowsForms/DevExpress.XtraPivotGrid.PivotGridAppearancesBase.Lines) property
+* [PivotGridLocalizer](https://docs.devexpress.com/CoreLibraries/DevExpress.XtraPivotGrid.Localization.PivotGridLocalizer) class
 
