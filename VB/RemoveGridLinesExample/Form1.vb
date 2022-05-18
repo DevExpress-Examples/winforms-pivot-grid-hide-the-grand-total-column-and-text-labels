@@ -32,18 +32,19 @@ Namespace RemoveGridLinesExample
 		End Sub
 
 		Private Sub InitializeFields()
-			pivotGridControl1.Fields.Add("Type", PivotArea.RowArea)
-			pivotGridControl1.Fields.Add("Product", PivotArea.RowArea)
-			Dim fieldYear As New PivotGridField("Date", PivotArea.RowArea)
+			pivotGridControl1.Fields.AddDataSourceColumn("Type", PivotArea.RowArea)
+			pivotGridControl1.Fields.AddDataSourceColumn("Product", PivotArea.RowArea)
+			Dim fieldYear As New PivotGridField()
+			fieldYear.Area = PivotArea.RowArea
+			fieldYear.DataBinding = New DataSourceColumnBinding("Date", PivotGroupInterval.DateYear)
 			fieldYear.Name = "FieldYear"
 			fieldYear.Caption = fieldYear.Name
-			fieldYear.GroupInterval = PivotGroupInterval.DateYear
-			Dim fieldMonth As New PivotGridField("Date", PivotArea.RowArea)
+			Dim fieldMonth As New PivotGridField()
+			fieldMonth.Area = PivotArea.RowArea
+			fieldMonth.DataBinding = New DataSourceColumnBinding("Date", PivotGroupInterval.DateMonth)
 			fieldMonth.Name = "FieldMonth"
 			fieldMonth.Caption = fieldMonth.Name
-			fieldMonth.GroupInterval = PivotGroupInterval.DateMonth
-			pivotGridControl1.Fields.AddRange(New PivotGridField() { fieldYear, fieldMonth })
-			pivotGridControl1.Fields.Add("Flag", PivotArea.RowArea)
+			pivotGridControl1.Fields.AddDataSourceColumn("Flag", PivotArea.RowArea)
 		End Sub
 		Private Function CreateTable(ByVal RowCount As Integer) As DataTable
 			Dim tbl As New DataTable()

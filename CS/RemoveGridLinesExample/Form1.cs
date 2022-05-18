@@ -37,18 +37,20 @@ namespace RemoveGridLinesExample
 
         private void InitializeFields()
         {
-            pivotGridControl1.Fields.Add("Type", PivotArea.RowArea);
-            pivotGridControl1.Fields.Add("Product", PivotArea.RowArea);
-            PivotGridField fieldYear = new PivotGridField("Date", PivotArea.RowArea);
+            pivotGridControl1.Fields.AddDataSourceColumn("Type", PivotArea.RowArea);
+            pivotGridControl1.Fields.AddDataSourceColumn("Product", PivotArea.RowArea);
+            PivotGridField fieldYear = new PivotGridField();
+            fieldYear.Area = PivotArea.RowArea;
+            fieldYear.DataBinding = new DataSourceColumnBinding("Date", PivotGroupInterval.DateYear);
             fieldYear.Name = "FieldYear";
             fieldYear.Caption = fieldYear.Name;
-            fieldYear.GroupInterval = PivotGroupInterval.DateYear;
-            PivotGridField fieldMonth = new PivotGridField("Date", PivotArea.RowArea);
+            PivotGridField fieldMonth = new PivotGridField();
+            fieldMonth.Area = PivotArea.RowArea;
+            fieldMonth.DataBinding = new DataSourceColumnBinding("Date", PivotGroupInterval.DateMonth);
             fieldMonth.Name = "FieldMonth";
             fieldMonth.Caption = fieldMonth.Name;
-            fieldMonth.GroupInterval = PivotGroupInterval.DateMonth;
             pivotGridControl1.Fields.AddRange(new PivotGridField[] { fieldYear, fieldMonth });
-            pivotGridControl1.Fields.Add("Flag", PivotArea.RowArea);
+            pivotGridControl1.Fields.AddDataSourceColumn("Flag", PivotArea.RowArea);
         }
         private DataTable CreateTable(int RowCount)
         {
