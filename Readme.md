@@ -8,10 +8,12 @@
 
 * [Form1.cs](./CS/RemoveGridLinesExample/Form1.cs) (VB: [Form1.vb](./VB/RemoveGridLinesExample/Form1.vb))
 <!-- default file list end -->
-# How to Hide Unnecessary Grid Lines and Text
+# Pivot Grid for Winforms - Hide Unnecessary Grid Lines and Text
 
+This example demonstrates how to clear grid lines and hide the following Pivot Grid elements:
 
-This example demonstrates how hide the grand total column when there are no Data or Column fields, clear grid lines and remove the "Drop Data Items Here", "Drop Column Fields Here", "Drop Filter Fields Here" labels.
+- The grand total column when there are no Data or Column fields
+- The "Drop Data Items Here", "Drop Column Fields Here", and "Drop Filter Fields Here" labels
 
 ![screenshot](/images/screenshot.png)
 
@@ -21,3 +23,11 @@ API in this example:
 * [PivotGridControl.Appearance.Lines](https://docs.devexpress.com/WindowsForms/DevExpress.XtraPivotGrid.PivotGridAppearancesBase.Lines) property
 * [PivotGridLocalizer](https://docs.devexpress.com/CoreLibraries/DevExpress.XtraPivotGrid.Localization.PivotGridLocalizer) class
 
+## Documentation
+
+[Custom Draw](https://docs.devexpress.com/WindowsForms/1817/controls-and-libraries/pivot-grid/appearance/custom-draw)
+
+## More Examples
+
+- [Pivot Grid for WinForms - Change the Field Value Header Background](https://github.com/DevExpress-Examples/winforms-pivot-change-the-field-value-header-appearance-backcolor)
+- [Pivot Grid for WinForms - Draw a Custom Element When a User Hovering Over Field Value with a Mouse](https://github.com/DevExpress-Examples/winforms-pivot-grid-draw-a-custom-element-on-mouse-hover)
