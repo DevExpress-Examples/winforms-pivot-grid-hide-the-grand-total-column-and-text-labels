@@ -8,8 +8,8 @@
 
 This example demonstrates how to clear grid lines and hide the following Pivot Grid elements:
 
-- The grand total column when there are no Data or Column fields
-- The "Drop Data Items Here", "Drop Column Fields Here", and "Drop Filter Fields Here" labels
+- The grand total column when there are no Data or Column fields.
+- The "Drop Data Items Here", "Drop Column Fields Here", and "Drop Filter Fields Here" labels.
 
 ![screenshot](/images/screenshot.png)
 
