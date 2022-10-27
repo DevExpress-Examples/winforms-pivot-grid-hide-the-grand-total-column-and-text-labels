@@ -4,18 +4,13 @@ using System;
 using System.Data;
 using System.Drawing;
 
-namespace RemoveGridLinesExample
-{
-    public partial class Form1 : DevExpress.XtraEditors.XtraForm
-    {
-        public Form1()
-        {
+namespace RemoveGridLinesExample {
+    public partial class Form1 : DevExpress.XtraEditors.XtraForm {
+        public Form1() {
             PivotGridLocalizer.Active = new MyLocalizer();
             InitializeComponent();
         }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
+        private void Form1_Load(object sender, EventArgs e) {
             pivotGridControl1.BeginUpdate();
             pivotGridControl1.DataSource = CreateTable(20);
             InitializeFields();
@@ -24,19 +19,13 @@ namespace RemoveGridLinesExample
             pivotGridControl1.EndUpdate();
 
         }
-
-        void pivotGridControl1_CustomDrawFieldValue(object sender, PivotCustomDrawFieldValueEventArgs e)
-        {
-            if (e.Area == PivotArea.ColumnArea)
-            {
+        void pivotGridControl1_CustomDrawFieldValue(object sender, PivotCustomDrawFieldValueEventArgs e) {
+            if (e.Area == PivotArea.ColumnArea) {
                 e.Graphics.FillRectangle(Brushes.White, e.Bounds);
                 e.Handled = true;
             }
-
         }
-
-        private void InitializeFields()
-        {
+        private void InitializeFields() {
             pivotGridControl1.Fields.AddDataSourceColumn("Type", PivotArea.RowArea);
             pivotGridControl1.Fields.AddDataSourceColumn("Product", PivotArea.RowArea);
             PivotGridField fieldYear = new PivotGridField();
@@ -52,16 +41,13 @@ namespace RemoveGridLinesExample
             pivotGridControl1.Fields.AddRange(new PivotGridField[] { fieldYear, fieldMonth });
             pivotGridControl1.Fields.AddDataSourceColumn("Flag", PivotArea.RowArea);
         }
-        private DataTable CreateTable(int RowCount)
-        {
+        private DataTable CreateTable(int RowCount) {
             DataTable tbl = new DataTable();
             tbl.Columns.Add("Type", typeof(string));
             tbl.Columns.Add("Product", typeof(string));
             tbl.Columns.Add("Date", typeof(DateTime));
             tbl.Columns.Add("Flag", typeof(bool));
-
             for (int i = 0; i < RowCount; i++)
-
                 for (int j = 0; j < RowCount; j++)
                     tbl.Rows.Add(new object[] {
                         String.Format("Type {0}", i % 5),
@@ -69,12 +55,9 @@ namespace RemoveGridLinesExample
                         DateTime.Now.AddYears(j % 7).AddMonths(j % 9), i % 2 == 0 });
             return tbl;
         }
-
     }
-    public class MyLocalizer : PivotGridResLocalizer
-    {
-        public override string GetLocalizedString(PivotGridStringId id)
-        {
+    public class MyLocalizer : PivotGridResLocalizer {
+        public override string GetLocalizedString(PivotGridStringId id) {
             if (id == PivotGridStringId.DataHeadersCustomization
                 || id == PivotGridStringId.ColumnHeadersCustomization
                 || id == PivotGridStringId.FilterHeadersCustomization)
@@ -82,5 +65,4 @@ namespace RemoveGridLinesExample
             return base.GetLocalizedString(id);
         }
     }
-
 }
