@@ -29,4 +29,5 @@ API in this example:
 ## More Examples
 
 - [Pivot Grid for WinForms - Change the Field Value Header Background](https://github.com/DevExpress-Examples/winforms-pivot-change-the-field-value-header-appearance-backcolor)
-- [Pivot Grid for WinForms - Draw a Custom Element When a User Hovering Over Field Value with a Mouse](https://github.com/DevExpress-Examples/winforms-pivot-grid-draw-a-custom-element-on-mouse-hover)
+- [Pivot Grid for WinForms - Draw a Custom Element When a User Hovers Over a Field Value with a Mouse](https://github.com/DevExpress-Examples/winforms-pivot-grid-draw-a-custom-element-on-mouse-hover)
+
