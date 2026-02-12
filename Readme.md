@@ -34,7 +34,7 @@ API in this example:
 - [Pivot Grid for WinForms - Draw a Custom Element When a User Hovers Over a Field Value with a Mouse](https://github.com/DevExpress-Examples/winforms-pivot-grid-draw-a-custom-element-on-mouse-hover)
 
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=winforms-pivot-grid-hide-the-grand-total-column-and-text-labels&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=winforms-pivot-grid-hide-the-grand-total-column-and-text-labels&~~~was_helpful=no)
 
